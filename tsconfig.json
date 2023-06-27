@@ -17,7 +17,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": false,
-    "baseUrl": "./src",
     "strict": true,
     "strictNullChecks": false,
     "strictFunctionTypes": false,
@@ -30,7 +29,14 @@
         "overrideIdFn": "[sha512:contenthash:base64:6]",
         "ast": true
       }
-    ]
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "@global/*": ["global/*"],
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@assets/*": ["assets/*"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/*.spec.ts"]

@@ -1,7 +1,8 @@
 import "./App.css";
 import styled from "@emotion/styled";
 import { Route, Routes } from "react-router-dom";
-import { HomePage } from "pages/HomePage";
+import { HomePage } from "@pages/Home";
+import { GamePage } from "@pages/Game";
 
 const AppContainer = styled.div`
   background-color: #282c34;
@@ -15,6 +16,7 @@ const App = () => {
     <AppContainer>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/game" element={<GamePage />} />
       </Routes>
     </AppContainer>
   );

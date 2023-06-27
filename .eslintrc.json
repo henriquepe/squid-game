@@ -1,0 +1,6 @@
+{
+  "root": true,
+  "rules": {
+    "testing-library/render-result-naming-convention": "off"
+  }
+}
