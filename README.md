@@ -43,11 +43,68 @@ Obs: Você pode precisar se cadastrar na plataforma do Figma para conseguir baix
 - Tocar `red-light-sound.mp3` toda vez que uma rodada comecar.
 - Tocar `main-theme.mp3` quando um novo jogo iniciar.
 
-## Avaliação 
+## Dependências
 
-Você sera avaliado por:
+Este projeto tem as seguintes dependências:
 
-- Quantidade de entrega do projeto
-- Resolução de problema
-- Estruturação
-- Qualidade de código
+@emotion/react: https://emotion.sh/docs/@emotion/react
+@emotion/styled: https://emotion.sh/docs/@emotion/styled
+@testing-library/jest-dom: https://testing-library.com/docs/ecosystem-jest-dom
+@testing-library/react: https://testing-library.com/docs/react-testing-library/intro
+@testing-library/user-event: https://testing-library.com/docs/ecosystem-user-event
+@types/jest: https://www.npmjs.com/package/@types/jest
+@types/node: https://www.npmjs.com/package/@types/node
+@types/react: https://www.npmjs.com/package/@types/react
+@types/react-dom: https://www.npmjs.com/package/@types/react-dom
+md5: https://www.npmjs.com/package/md5
+react: https://reactjs.org/docs/getting-started.html
+react-dom: https://reactjs.org/docs/react-dom.html
+react-router-dom: https://reactrouter.com/web/guides/quick-start
+react-scripts: https://create-react-app.dev/docs/getting-started/
+typescript: https://www.typescriptlang.org/docs/
+web-vitals: https://web.dev/vitals/
+@babel/plugin-transform-runtime: https://babeljs.io/docs/en/babel-plugin-transform-runtime
+@babel/preset-env: https://babeljs.io/docs/en/babel-preset-env
+@babel/preset-react: https://babeljs.io/docs/en/babel-preset-react
+@emotion/jest: https://emotion.sh/docs/@emotion/jest
+@testing-library/react-hooks: https://react-hooks-testing-library.com/
+
+## Iniciando o Projeto
+
+Siga as etapas abaixo para iniciar o projeto:
+
+### Instale as dependências com YARN:
+
+```
+yarn
+```
+
+## Executando Testes Unitários
+
+Para executar os testes unitários, use o script test que já está configurado.
+
+```
+yarn test
+```
+
+## Estrutura de Pastas
+
+### global:
+
+Centraliza arquivos de configuração global, como cores, textos, tipos globais, etc.
+
+### components:
+
+Centraliza componentes que podem ser utilizados em mais de um lugar dentro da aplicação, seus devidos testes unitários e possíveis hooks próprios.
+
+### pages:
+
+Centraliza as páginas da aplicação, seus devidos testes unitários e possíveis hooks próprios.
+
+**Todas estas pastas estão dentro de uma pasta de nome src.**
+**Na raiz existe uma pasta de nome types onde é centralizado as definições de tipos que precisaram de alguma customização ou extensão.**
+
+## Hook Pattern
+
+A abordagem para construir aplicativos React Native difere da criação de aplicativos nativos iOS e Android isoladamente. Para aproveitar a arquitetura MVC, utilizamos o `hook pattern`. Esse padrão envolve a abstração de toda a lógica de controle e estado dentro do hook, cumprindo a função do Model e do Controller em paradigmas diferentes.
+O componente em si busca atender ao conceito da VIEW, que é basicamente a interface do usuário, sem a responsabilidade de controle de estado e lógica. Dessa forma, alinhamos os benefícios da arquitetura MVC com as particularidades do desenvolvimento em React Native.
