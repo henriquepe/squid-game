@@ -106,5 +106,5 @@ Centraliza as páginas da aplicação, seus devidos testes unitários e possíve
 
 ## Hook Pattern
 
-A abordagem para construir aplicativos React Native difere da criação de aplicativos nativos iOS e Android isoladamente. Para aproveitar a arquitetura MVC, utilizamos o `hook pattern`. Esse padrão envolve a abstração de toda a lógica de controle e estado dentro do hook, cumprindo a função do Model e do Controller em paradigmas diferentes.
-O componente em si busca atender ao conceito da VIEW, que é basicamente a interface do usuário, sem a responsabilidade de controle de estado e lógica. Dessa forma, alinhamos os benefícios da arquitetura MVC com as particularidades do desenvolvimento em React Native.
+Para aproveitar a arquitetura MVC, utilizamos o `hook pattern`. Esse padrão envolve a abstração de toda a lógica de controle e estado dentro do hook, cumprindo a função do Model e do Controller em paradigmas diferentes.
+O componente em si busca atender ao conceito da VIEW, que é basicamente a interface do usuário, sem a responsabilidade de controle de estado e lógica. Dessa forma, alinhamos os benefícios da arquitetura MVC com as particularidades do desenvolvimento em React.
